@@ -5,11 +5,13 @@
 @custom-variant dark (&: is(.dark *));
 
 @theme {
+  --color-brand-gray-deep: #919191;
   --color-brand-gray-dark: #747474;
   --color-brand-gray-medium: #676767;
   --color-brand-gray-light: #d1d1d1;
   --color-brand-gray-DEFAULT: #525252;
   --color-brand-green-light: #def8f3;
+  --color-brand-red-medium: #eb5757;
 }
 
 @theme inline {
@@ -134,9 +136,16 @@
   }
 
   h2 {
-    @apply font-bold text-brand-gray-DEFAULT text-xl sm:text-[28px];
+    @apply font-bold text-brand-gray-DEFAULT text-xl sm:text-[32px];
   }
 
+  h3 {
+    @apply font-semibold text-black  text-xl sm:text-[32px];
+  }
+
+  h4 {
+    @apply text-brand-gray-deep text-xl sm:text-[26px];
+  }
   .info {
     @apply text-base text-brand-gray-light;
   }

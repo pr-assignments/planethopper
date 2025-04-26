@@ -15,7 +15,7 @@ export function PlanetList() {
     return <ErrorDisplay message={"Oups something went really wrong!"} />;
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 pb-4">
       {planets.map((planet) => {
         return <PlanetItem key={planet.name} planet={planet} />;
       })}
